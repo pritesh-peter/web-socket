@@ -27,7 +27,7 @@ const io = socketIo(server,{
 
 let interval;
 
-io.on("FromAPI", (socket) => {
+io.on("connection", (socket) => {
   console.log("New client connected");
   if (interval) {
     clearInterval(interval);

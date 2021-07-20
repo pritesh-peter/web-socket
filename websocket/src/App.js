@@ -14,7 +14,6 @@ function App() {
       setResponse(data);
 
     });
-    
   }, []);
   return (
     <div>
